@@ -4,38 +4,41 @@
     --primary-color:#6EE7B7;
     --dark-grey:#4B5563;
     --off-white:#F3F4F6;
+    --very-light-color: #ECFDF5;
 }
 
 body{
     font-family: 'Montserrat', sans-serif;
     margin: 0px;
+    background-color: var(--very-light-color);
 }
 
 /**Containers*/
 .container{
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
-.container-fluid{
-
+   padding: 0rem 1rem;
 }
 
 .container-center{
     max-width:600px;
     margin: auto;
+    text-align: center; 
 }
 
 /**Links**/
 
 .link{
+    box-sizing: border-box;
     text-decoration: none;
     padding: 0.5rem 1rem;
+    margin-top: 100px;
+   /** margin-top: 1rem;
+    margin-bottom: 1rem; **/
 }
 
 .link-p{
     background-color: var(--primary-color);
     border-radius: 0.5rem;
+    line-height: 2rem;
     color: white;
 }
 
@@ -43,8 +46,12 @@ body{
     color: var(--primary-color);
     border-radius: 0.5rem;
     border: 1px solid var(--primary-color);
+    line-height: 2rem;
 }
 
+.link .link-p{
+    margin: auto;
+}
 hr{
     margin: 3rem 0rem;
 }
@@ -53,6 +60,8 @@ hr{
  
 .list-non-bullet{
     list-style: none;
+    margin: auto;
+    margin-top: 1rem;
 }
 
 .list-item-inline{
@@ -105,10 +114,17 @@ hr{
     color: var(--dark-grey);
     text-align: center;
     padding: 1rem;
+    margin-bottom: 0rem;
 }
 
 .hero .hero-heading .hero-inverted{
     color:var(--primary-color);
+}
+
+.hero .hero-sub{
+    text-align: center;
+    margin: auto;
+    margin-top: 1.5rem;
 }
 
 /** Sections */
@@ -142,4 +158,17 @@ hr{
 
 .footer ul{
     padding-inline-start: 0px;
+}
+
+.footer .footer-header{
+    font-weight: bold;
+    font-size: large;
+}
+
+.margin-md{
+    margin-bottom: 0.5rem;
+}
+
+.list-non-bullet .container{
+    margin-bottom: 4rem;
 }
